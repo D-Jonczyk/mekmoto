@@ -1,0 +1,9 @@
+<div class="motorcycle-list">
+  <div class="motorcycle-item" *ngFor="let motorcycle of motorcycles">
+    <img [src]="motorcycle.image" alt="{{ motorcycle.name }}" fill>
+    <div>
+      <h3>{{ motorcycle.name }}</h3>
+      <button (click)="reserveMotorcycle(motorcycle)">Reserve</button>
+    </div>
+  </div>
+</div>

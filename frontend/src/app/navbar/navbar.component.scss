@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.5em;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}

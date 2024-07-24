@@ -1,0 +1,17 @@
+<div class="reservation-details">
+  <h2>Reservation Details</h2>
+  <form (ngSubmit)="submitReservation()">
+    <label for="startDate">Start Date</label>
+    <input type="date" id="startDate" [(ngModel)]="reservation.startDate" name="startDate" required>
+
+    <label for="endDate">End Date</label>
+    <input type="date" id="endDate" [(ngModel)]="reservation.endDate" name="endDate" required>
+
+    <label for="motorcycle">Motorcycle</label>
+    <select id="motorcycle" [(ngModel)]="reservation.motorcycle" name="motorcycle" required>
+      <option *ngFor="let motorcycle of motorcycles" [value]="motorcycle.name">{{ motorcycle.name }}</option>
+    </select>
+
+    <button type="submit">Confirm Reservation</button>
+  </form>
+</div>
